@@ -42,13 +42,13 @@ const DetailView: React.FC<DetailViewProps> = ({ params }) => {
   });
   const [load, setLoad] = useState<boolean>(false);
 
-  console.log("load", load);
+  // console.log("load", load);
   const { buyNFT, getNFTUri, loading, setLoading, getBalance, message } =
     useWeb3();
 
   const getBal = async () => {
     const count = await getBalance(tokenId);
-    console.log("count", parseInt(count));
+    // console.log("count", parseInt(count));
 
     setTokenCount(parseInt(count));
   };
@@ -107,7 +107,7 @@ const DetailView: React.FC<DetailViewProps> = ({ params }) => {
 
   const handleClick = () => {
     setIsConfirm((prev) => !prev);
-    console.log("isConfirm", isConfirm);
+    // console.log("isConfirm", isConfirm);
   };
   // console.log("url", url);
   return (

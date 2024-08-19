@@ -32,7 +32,7 @@ const Market: React.FC = () => {
   // console.log("account==>", account);
   const getBal = async (tokenId: number) => {
     const count = await getBalance(tokenId);
-    console.log("count", parseInt(count));
+    // console.log("count", parseInt(count));
     return parseInt(count);
   };
   useEffect(() => {
